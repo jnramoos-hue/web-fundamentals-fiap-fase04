@@ -1,0 +1,38 @@
+/*formata o corpo da página*/
+
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    text-decoration: underline;
+}
+h2 {
+    font-size: 28px;
+    color: green;
+    font-weight: 300;
+    text-align: center;
+}
+p{
+    font-weight: 600;
+    font-size: 20px;
+    color: blue;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    white-space: wrap;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+    text-shadow: 1px 1px 10px black;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-size: 25px;
+}
