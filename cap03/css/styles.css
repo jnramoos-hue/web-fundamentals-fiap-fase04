@@ -1,5 +1,7 @@
 /*formata o corpo da página*/
-
+body{
+    font-family: "Poppins", sans-serif;
+}
 
 h1{
     font-size: 40px;
@@ -10,14 +12,12 @@ h1{
 }
 h2 {
     font-size: 28px;
-    color: green;
     font-weight: 300;
     text-align: center;
 }
 p{
     font-weight: 600;
     font-size: 20px;
-    color: blue;
     line-height: 1.6;
     letter-spacing: 1px;
     word-spacing: 10px;
