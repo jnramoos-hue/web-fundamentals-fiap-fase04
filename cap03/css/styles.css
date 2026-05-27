@@ -17,7 +17,7 @@ h2 {
 }
 p{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.6;
     letter-spacing: 1px;
     word-spacing: 10px;
@@ -35,4 +35,27 @@ a{
 a:hover{
     text-decoration: underline;
     font-size: 25px;
+}
+
+#paragrafo-1{
+    font-size: 30px;
+    color: #dc143c;
+}
+
+.paragrafo{
+    color: #336699;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.link{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #dc143c;
+
 }
