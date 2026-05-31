@@ -1,21 +1,23 @@
 /*formata o corpo da página*/
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-h1{
+h1 {
     font-size: 40px;
     font-weight: 400;
     text-align: center;
     line-height: 1;
     text-decoration: underline;
 }
+
 h2 {
     font-size: 28px;
     font-weight: 300;
     text-align: center;
 }
-p{
+
+p {
     font-weight: 600;
     font-size: 30px;
     line-height: 1.6;
@@ -24,7 +26,7 @@ p{
     white-space: wrap;
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -32,30 +34,82 @@ a{
     text-shadow: 1px 1px 10px black;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
     font-size: 25px;
 }
 
-#paragrafo-1{
+#paragrafo-1 {
     font-size: 30px;
     color: #dc143c;
 }
 
-.paragrafo{
+.paragrafo {
     color: #336699;
     font-weight: 600;
     font-size: 25px;
 }
 
-.link{
+.link {
     font-size: 15px;
     font-weight: 900;
     letter-spacing: 1px;
     text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
     color: #dc143c;
+}
+
+/*.container{*/
+/*    color: #9999;*/
+/*}*/
+/*.container-title{*/
+/*    font-size: 50px;*/
+/*}*/
+
+/*.container-text {*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*.container-link{*/
+/*    font-size: 20px;*/
+/*    text-decoration: none;*/
+/*    color: red;*/
+/* }*/
+
+/*--------------------------------------*/
+
+/*Nesting Funcionando*/
+
+.container {
+    color: #999;
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .container-link {
+        font-size: 20px;
+        text-decoration: none;
+        color: red;
+
+        &.hover {
+            font-weight: 900;
+        }
+
+    }
+}
+
+/*Listas ordenadas*/
+
+ol,ul{
+    list-style: none;
 
 }
+
