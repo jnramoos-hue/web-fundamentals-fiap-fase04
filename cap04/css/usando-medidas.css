@@ -1,0 +1,35 @@
+:root {
+    --font-body: Quicksand, sans-serif;
+    --color-light: #fcfcfc;
+    --color-slate-900: rgb(15, 23, 43);
+    --color-slate-400: rgb(153, 161, 175);
+    --color-blue-200: oklch(80.9% 0.105 251.813);
+}
+body {
+    font-family: var(--font-body, monospace);
+    background-color: var(--color-slate-900);
+    align-content: center;
+    min-height: 95vh;
+}
+.card {
+    text-align: center;
+    color: var(--color-slate-400);
+}
+.card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.card h2 {
+    font-size: 7vmax;
+}
+.card h4 {
+    font-size: 4vmin;
+}
+.card p {
+    font-size: 1em;
+}
+.icons a {
+    color: var(--color-blue-200);
+    font-size: 1.8rem;
+}
