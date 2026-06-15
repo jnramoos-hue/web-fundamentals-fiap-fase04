@@ -1,0 +1,49 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: #ffffff;
+    --color-slate-900: rgb(15, 23, 43);
+    --color-slate-500: rgb(73, 127, 182);
+}
+body {
+    font-family: var(--font-body, sans-serif);
+    background-color: var(--color-slate-900);
+    height: 95vh;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+    color: var(--color-light);
+}
+.bordas {
+    align-content: center;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    margin: 20px 10px;
+    color: var(--color-slate-500);
+}
+.solid {
+    border: 8px solid var(--color-slate-500);
+}
+.dotted {
+    border: 8px dotted var(--color-slate-500);
+}
+.dashed {
+    border: 8px dashed var(--color-slate-500);
+}
+.double {
+    border: 8px double var(--color-slate-500);
+}
+.inset {
+    border: 8px inset var(--color-slate-500);
+}
+.outset {
+    border: 8px outset var(--color-slate-500);
+}
+.groove {
+    border: 8px groove var(--color-slate-500);
+}
+.ridge {
+    border: 8px ridge var(--color-slate-500);
+}

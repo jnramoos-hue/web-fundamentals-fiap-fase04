@@ -1,0 +1,20 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-body: Quicksand;
+    --color-light: #ffffff;
+    --color-slate-900: rgb(15, 23, 43);
+    --color-slate-500: rgb(73, 127, 182);
+}
+body {
+    font-family: var(--font-body, sans-serif);
+    color: var(--color-light);
+    background-color: var(--color-slate-900);
+}
+h1 {
+    color: var(--color-slate-500);
+}

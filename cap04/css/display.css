@@ -1,0 +1,23 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: #fcfcfc;
+    --color-slate-900: rgb(15, 23, 43);
+}
+body {
+    font-family: var(--font-body, monospace);
+    background-color: var(--color-slate-900);
+    align-content: center;
+    height: 95vh;
+}
+h1 {
+    text-align: center;
+    color: var(--color-light);
+}
+.images {
+    text-align: center;
+}
+img {
+    display: inline;
+    width: 120px;
+    border-radius: 7px;
+}

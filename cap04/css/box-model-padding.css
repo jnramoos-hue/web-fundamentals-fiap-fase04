@@ -1,0 +1,30 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: #ffffff;
+    --color-slate-900: rgb(15, 23, 43);
+    --color-slate-500: rgb(73, 127, 182);
+}
+body {
+    font-family: var(--font-body, monospace);
+    background-color: var(--color-slate-900);
+    height: 95vh;
+    align-content: center;
+}
+h1 {
+    text-align: center;
+    color: var(--color-light);
+    margin-top: 50px;
+}
+.bordas {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    color: var(--color-slate-500);
+    border: 3px solid var(--color-slate-500);
+    border-radius: 5px;
+    margin: 30px;
+}
+.padding {
+    padding: 0 50px;
+    box-sizing: border-box;
+}
