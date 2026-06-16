@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo select</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fileset-select.css">
+</head>
+<body>
+<main>
+    <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+        <fieldset>
+            <legend>Lista de Inteligências Artificiais</legend>
+            <section class="form-campos">
+                <select name="ia-escolhida" id="lista-ias" required>
+                    <option value="" disabled selected>Escolha uma ferramenta...</option>
+                    <option value="gemini">Google Gemini</option>
+                    <option value="chatgpt">ChatGPT (OpenAI)</option>
+                    <option value="claude">Claude (Anthropic)</option>
+                    <option value="perplexity">Perplexity AI</option>
+                    <option value="copilot">Microsoft Copilot</option>
+                </select>
+                <button type="submit" id="enviar-mensagem" name="enviar-mensagem" class="btn">Acessar a
+                    IA</button>
+            </section>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo datalist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/datalist.css">
+</head>
+<body>
+<main>
+    <form name="form-cadastro" id="form-cadastro" method="post" action="endereco-da-aplicacao">
+        <fieldset>
+            <legend>Busca de Inteligências Artificiais</legend>
+            <label for="ia-input">Digite ou selecione uma IA:</label>
+            <section class="form-campos">
+                <input list="ias-disponiveis" id="ia-input" name="ia-escolhida" placeholder="Ex: Gemini..." required>
+                <datalist id="ias-disponiveis">
+                    <option value="Google Gemini">
+                    <option value="ChatGPT (OpenAI)">
+                    <option value="Claude (Anthropic)">
+                    <option value="Perplexity AI">
+                    <option value="Microsoft Copilot">
+                    <option value="Midjourney">
+                    <option value="Stable Diffusion">
+                    <option value="OpenAI Sora">
+                    <option value="Llama 3 (Meta)">
+                    <option value="Mistral AI">
+                </datalist>
+                <button type="submit" id="acessar" name="acessar" class="btn">Acessar a IA</button>
+            </section>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>

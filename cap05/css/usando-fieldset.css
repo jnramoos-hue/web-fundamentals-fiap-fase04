@@ -1,0 +1,36 @@
+:root{
+    --font-body: Quicksand;
+    --color-blue-900: rgb(25, 52, 121);
+    --sapcing-1: 10px;
+    --sapcing-2: 20px;
+    --radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+body{
+    color: var(--color-blue-900);
+}
+
+h2{
+    text-align: center;
+    margin-block: var(--sapcing-2);
+}
+form{
+    width: 90%;
+    margin: var(--sapcing-1);
+}
+fieldset{
+    padding: var(--sapcing-1);
+    border-radius: var(--radius);
+    margin: 20px 0;
+}
+legend{
+    padding: 0 var(--radius);
+    font-weight: 900;
+}

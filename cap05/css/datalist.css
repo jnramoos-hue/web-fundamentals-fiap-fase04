@@ -1,0 +1,57 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: rgb(255, 255, 255);
+    --color-blue-100: rgb(109, 120, 148);
+    --color-blue-900: rgb(25, 52, 121);
+    --spacing-1: 10px;
+    --spacing-2: 20px;
+    --radius: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body, monospace);
+}
+body {
+    color: var(--color-blue-900);
+}
+form {
+    width: 90%;
+    margin: var(--spacing-1) auto;
+}
+fieldset {
+    padding: var(--spacing-1);
+    border-radius: var(--radius);
+    margin: var(--spacing-2) 0;
+}
+legend {
+    padding: 0 5px;
+    font-weight: 800;
+}
+.form-campos {
+    margin: var(--spacing-1) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-1);
+}
+input {
+    height: 3rem;
+    width: 100%;
+    padding: 0 var(--spacing-1);
+    font-size: 1.2rem;
+}
+.btn {
+    width: 200px;
+    height: 3rem;
+    background-color: var(--color-blue-100);
+    color: var(--color-light);
+    border-radius: var(--radius);
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--color-blue-900);
+}

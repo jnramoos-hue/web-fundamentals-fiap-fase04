@@ -1,0 +1,57 @@
+:root {
+    --font-body: Quicksand;
+    --color-light: rgb(255, 255, 255);
+    --color-blue-100: rgb(109, 120, 148);
+    --color-blue-900: rgb(25, 52, 121);
+    --sapcing-1: 10px;
+    --saping-2: 20px;
+    --radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body, monospace);
+}
+
+body{
+    color: var(--color-blue-900);
+}
+form{
+    width: 90%;
+    margin: var(--sapcing-2);
+}
+.form-campos{
+    margin: var(--saping-2);
+}
+fieldset{
+    padding: var(--sapcing-1);
+    border-radius: var(--radius);
+    margin: var(--sapcing-2);
+}
+
+legend{
+    padding: var(--radius);
+    font-weight: 800;
+}
+input{
+    width: 100%;
+    height: 50px;
+}
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--sapcing-2);
+}
+.btn{
+    margin-top: var(--sapcing-1);
+    padding: var(--sapcing-1) var(--sapcing-2);
+}
+.btn:hover{
+    background-color: var(--color-blue-900);
+}
+
+
+
+
