@@ -1,3 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-body: Quicksand, sans-serif;
+    --color-light: #fcfcfc;
+    --color-slate-900: rgb(17, 35, 80);
+    --color-blue-200: rgb(142, 197, 255);
+}
+
 body{
-    font-family: Poppins, sans-serif;
+    color: var(--color-light);
+    font-family: var(--font-body), serif;
+}
+table{
+    background-color: var(--color-slate-900);
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 5px;
+}
+
+caption{
+    color: var(--color-slate-900);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+thead tr, tfoot tr{
+    color: var(--color-blue-200);
+}
+
+th, td{
+    width: 25%;
+    padding: 1rem;
+}
+
+thead tr, tbody tr{
+    border-bottom: 1px solid var(--color-blue-200);
+}
+tbody tr:hover{
+    color: var(--color-blue-200);
+}
+
+tfoot{
+    font-weight: 700;
 }
