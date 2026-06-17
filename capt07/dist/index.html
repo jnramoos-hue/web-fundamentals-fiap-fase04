@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FinanNews - Educação e Mercado Financeiro</title>
+
+    <!-- Fonte Roboto usada no projeto original -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <!-- CSS gerado pelo Tailwind CLI -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="min-h-screen bg-fcfcfc font-['Roboto',sans-serif] text-[#333] leading-relaxed">
+
+<!-- ======================================================
+     HEADER
+     Substitui:
+     .header { background, padding, border-bottom }
+     .linha { width: 960px, margin auto, padding }
+     .coluna, .col3, .col9 { grid antigo com float }
+======================================================= -->
+<div class="header border-white bg-slate-200 py-5">
+    <div class="linha mx-auto w-[95%] max-w-[960px] py-2">
+
+        <!--
+            flex: coloca logo e menu lado a lado
+            justify-between: logo à esquerda e menu à direita
+            items-center: alinha verticalmente
+            max-md:flex-col: em telas menores, empilha logo e menu
+        -->
+        <header class="flex items-center justify-between gap-6 max-md:flex-col">
+
+            <!-- LOGO -->
+            <div class="coluna col3 box-border px-[10px] md:w-[240px]">
+                <h1 class="logo m-0 text-3xl font-light tracking-[-2px] text-[#315e8a] max-md:text-center max-sm:text-2xl">
+                    FINANNEWS
+                </h1>
+            </div>
+
+            <!-- MENU -->
+            <div>
+                <nav>
+                    <!--
+                        menu: mantido para o JavaScript mobile
+                        flex: substitui display inline-block dos li
+                        justify-end: joga menu para direita
+                        gap-5: substitui margin-left: 20px
+                        max-md:justify-center: centraliza no mobile
+                        max-sm:flex-col: menu em coluna em telas pequenas
+                    -->
+                    <ul class="flex list-none items-center justify-end gap-5 p-0 max-md:justify-center max-sm:flex-col max-sm:gap-2">
+
+                        <li>
+                            <a href="index.html"
+                               class="relative py-[5px] text-[0.85rem] font-medium uppercase text-[#1f3c58] no-underline transition duration-300
+                                          after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-[#315e8a] after:transition-transform after:duration-300 after:content-['']
+                                          hover:after:scale-x-100">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="artigos.html"
+                               class="relative py-[5px] text-[0.85rem] font-medium uppercase text-[#1f3c58] no-underline transition duration-300
+                                          after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-[#315e8a] after:transition-transform after:duration-300 after:content-['']
+                                          hover:after:scale-x-100">
+                                Artigos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="conteudos.html"
+                               class="relative py-[5px] text-[0.85rem] font-medium uppercase text-[#1f3c58] no-underline transition duration-300
+                                          after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-[#315e8a] after:transition-transform after:duration-300 after:content-['']
+                                          hover:after:scale-x-100">
+                                Conteúdos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="sobre.html"
+                               class="relative py-[5px] text-[0.85rem] font-medium uppercase text-[#1f3c58] no-underline transition duration-300
+                                          after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-[#315e8a] after:transition-transform after:duration-300 after:content-['']
+                                          hover:after:scale-x-100">
+                                Sobre
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contato.html"
+                               class="relative py-[5px] text-[0.85rem] font-medium uppercase text-[#1f3c58] no-underline transition duration-300
+                                          after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:bg-[#315e8a] after:transition-transform after:duration-300 after:content-['']
+                                          hover:after:scale-x-100">
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+    </div>
+</div>
+
+<!-- ======================================================
+     CONTEÚDO PRINCIPAL
+     Substitui:
+     .linha + .col3 + .col9 com float
+     Agora usamos CSS Grid com Tailwind
+======================================================= -->
+<main class="linha mx-auto w-[95%] max-w-[960px] py-[10px]">
+
+    <!--
+        grid-cols-[240px_1fr]: sidebar 240px e conteúdo restante
+        gap: simula o espaçamento das colunas antigas
+        max-md:grid-cols-1: em telas menores vira uma coluna
+    -->
+    <section class="grid grid-cols-1 gap-5 md:grid-cols-[240px_1fr]">
+
+        <!-- SIDEBAR -->
+        <aside class="coluna col3 sidebar box-border rounded-lg border border-[#eee] bg-white p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+
+            <h3 class="mb-5 border-l-[5px] border-[#315e8a] pl-[15px] text-[1.1rem] font-bold uppercase text-[#1f3c58]">
+                Aprendizado Rápido
+            </h3>
+
+            <ul class="sem-marcador sem-padding list-none p-0">
+                <li class="border-b border-[#f0f0f0]">
+                    <a href="#" class="block px-[5px] py-[10px] text-[0.9rem] text-[#315e8a] no-underline transition duration-300 hover:bg-[#f8f9fa] hover:pl-[10px] hover:text-[#1f3c58]">
+                        Como começar a investir
+                    </a>
+                </li>
+
+                <li class="border-b border-[#f0f0f0]">
+                    <a href="#" class="block px-[5px] py-[10px] text-[0.9rem] text-[#315e8a] no-underline transition duration-300 hover:bg-[#f8f9fa] hover:pl-[10px] hover:text-[#1f3c58]">
+                        O que é diversificação
+                    </a>
+                </li>
+
+                <li class="border-b border-[#f0f0f0]">
+                    <a href="#" class="block px-[5px] py-[10px] text-[0.9rem] text-[#315e8a] no-underline transition duration-300 hover:bg-[#f8f9fa] hover:pl-[10px] hover:text-[#1f3c58]">
+                        Renda fixa x Bolsa
+                    </a>
+                </li>
+
+                <li class="border-b border-[#f0f0f0]">
+                    <a href="#" class="block px-[5px] py-[10px] text-[0.9rem] text-[#315e8a] no-underline transition duration-300 hover:bg-[#f8f9fa] hover:pl-[10px] hover:text-[#1f3c58]">
+                        Entendendo a inflação
+                    </a>
+                </li>
+
+                <li class="border-b border-[#f0f0f0]">
+                    <a href="#" class="block px-[5px] py-[10px] text-[0.9rem] text-[#315e8a] no-underline transition duration-300 hover:bg-[#f8f9fa] hover:pl-[10px] hover:text-[#1f3c58]">
+                        Planejamento financeiro
+                    </a>
+                </li>
+            </ul>
+
+            <a href="artigos.html"
+               class="botao mt-5 inline-block rounded-full bg-[#315e8a] px-[25px] py-[10px] text-[0.85rem] font-medium text-white shadow-[0_4px_6px_rgba(49,94,138,0.2)] transition duration-300 hover:-translate-y-[2px] hover:bg-[#1f3c58] hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]">
+                Ver todos &raquo;
+            </a>
+        </aside>
+
+        <!-- CONTEÚDO DESTAQUE -->
+        <section class="coluna col9 box-border px-[10px]">
+
+            <h2 class="mb-5 text-2xl font-bold text-[#333]">
+                Destaque do Dia:
+                <em class="font-light italic">
+                    Estratégia sólida para investir
+                </em>
+            </h2>
+
+            <img src="../dist/images/thumb-grande.jpg" alt="Investimentos"  class="mb-4 block h-auto max-w-full border-gray-300 rounded-xl shadow-lg ">
+
+            <p class="mb-5 leading-relaxed text-[#555]">
+                Em um cenário cada vez mais volátil, a construção de uma estratégia consistente é
+                fundamental para proteger e multiplicar seu patrimônio. A disciplina é tão importante
+                quanto a escolha dos ativos — investidores que mantêm foco no longo prazo atravessam
+                ciclos com muito mais segurança.
+            </p>
+
+            <a href="artigos.html"
+               class="botao inline-block rounded-full bg-[#315e8a] px-[25px] py-[10px] text-[0.85rem] font-medium text-white shadow-[0_4px_6px_rgba(49,94,138,0.2)] transition duration-300 hover:-translate-y-[2px] hover:bg-[#1f3c58] hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]">
+                Ver análises recentes &raquo;
+            </a>
+
+        </section>
+    </section>
+</main>
+
+<!-- ======================================================
+     CONTEÚDO EXTRA
+     Substitui:
+     .conteudo-extra
+     .col7
+     .col5
+     ul.noticias
+======================================================= -->
+<section class="conteudo-extra clear-both bg-[#f1f2ea] py-[30px]">
+
+    <div class="linha mx-auto grid w-[95%] max-w-[960px] grid-cols-1 gap-10 py-[10px] md:grid-cols-[560px_1fr]">
+
+        <!-- TEXTO INSTITUCIONAL -->
+        <section class="coluna col7 box-border px-[10px]">
+
+            <h2 class="mb-5 text-2xl font-bold leading-snug text-[#333]">
+                Como o conhecimento financeiro transforma vidas
+            </h2>
+
+            <p class="mb-5 leading-relaxed text-[#555]">
+                Educação financeira não é apenas sobre investir; é sobre construir liberdade,
+                estabilidade e um futuro mais seguro. Quanto mais você entende o mercado, melhores são
+                suas decisões.
+            </p>
+
+            <p class="mb-5 leading-relaxed text-[#555]">
+                Nosso objetivo é simplificar conceitos e trazer clareza para que qualquer pessoa,
+                mesmo iniciando do zero, consiga investir de forma segura.
+            </p>
+
+        </section>
+
+        <!-- ÚLTIMAS NOTÍCIAS -->
+        <aside class="coluna col5 box-border px-[10px]">
+
+            <h3 class="mb-5 text-xl font-bold text-[#333]">
+                Últimas notícias
+            </h3>
+
+            <ul class="noticias sem-marcador sem-padding mt-5 list-none space-y-0 p-0">
+
+                <!-- NOTÍCIA 1 -->
+                <li class="grid grid-cols-[80px_1fr] grid-rows-[auto_auto] gap-x-[15px] border-b border-[#e1e1e1] pb-[15px] mb-[25px]">
+
+                    <img src="../dist/images/thumb-pequena.jpg"
+                         alt=""
+                         class="row-span-2 h-[80px] w-[80px] rounded-md object-cover border-gray-300 rounded-xl shadow-lg">
+
+                    <h4 class="m-0 mb-[5px] text-base font-semibold leading-tight text-[#1f3c58]">
+                        Taxas de juros e o seu bolso
+                    </h4>
+
+                    <p class="m-0 text-[0.88rem] leading-[1.4] text-[#666]">
+                        Entenda como mudanças nas taxas podem afetar seu poder de compra e seus investimentos.
+                        <a href="#" class="mt-2 inline-block text-[0.75rem] font-bold uppercase text-[#315e8a] no-underline hover:underline">
+                            Leia mais &raquo;
+                        </a>
+                    </p>
+                </li>
+
+                <!-- NOTÍCIA 2 -->
+                <li class="grid grid-cols-[80px_1fr] grid-rows-[auto_auto] gap-x-[15px] border-b border-[#e1e1e1] pb-[15px] mb-[25px]">
+
+                    <img src="../dist/images/thumb-pequena.jpg "
+                         alt=""
+                         class="row-span-2 h-[80px] w-[80px] rounded-md object-cover border-gray-300 rounded-xl shadow-lg">
+
+                    <h4 class="m-0 mb-[5px] text-base font-semibold leading-tight text-[#1f3c58]">
+                        Bolsa fecha em alta
+                    </h4>
+
+                    <p class="m-0 text-[0.88rem] leading-[1.4] text-[#666]">
+                        Movimentos positivos do mercado mostram recuperação do setor.
+                        <a href="#" class="mt-2 inline-block text-[0.75rem] font-bold uppercase text-[#315e8a] no-underline hover:underline">
+                            Leia mais &raquo;
+                        </a>
+                    </p>
+                </li>
+
+                <!-- NOTÍCIA 3 -->
+                <li class="grid grid-cols-[80px_1fr] grid-rows-[auto_auto] gap-x-[15px]">
+
+                    <img src="../dist/images/thumb-pequena.jpg"
+                         alt=""
+                         class="row-span-2 h-[80px] w-[80px] rounded-md object-cover border-gray-300 rounded-xl shadow-lg">
+
+                    <h4 class="m-0 mb-[5px] text-base font-semibold leading-tight text-[#1f3c58]">
+                        Inflação preocupa investidores
+                    </h4>
+
+                    <p class="m-0 text-[0.88rem] leading-[1.4] text-[#666]">
+                        O impacto da inflação na vida das famílias e no retorno dos investimentos.
+                        <a href="#" class="mt-2 inline-block text-[0.75rem] font-bold uppercase text-[#315e8a] no-underline hover:underline">
+                            Leia mais &raquo;
+                        </a>
+                    </p>
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+</section>
+
+<!-- ======================================================
+     FOOTER
+     Substitui:
+     .footer
+======================================================= -->
+<footer class="footer clear-both bg-[#1f3c58] py-[30px] text-center font-thin text-[#ebebeb]">
+    <div class="linha mx-auto w-[95%] max-w-[960px] py-[10px]">
+        <div class="coluna col12 box-border w-full px-[10px]">
+            <span>&copy; 2025 - FinanNews</span>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript original mantido -->
+<script src="../dist/js/script.js"></script>
+</body>
+</html>

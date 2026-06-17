@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx @tailwindcss/cli -i ../capt07/src/input.css -o ../capt07/dist/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
