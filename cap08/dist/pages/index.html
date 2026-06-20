@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Web</title>
+    <title>Produto</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-<!-- Conteúdo HTML -->
-<!-- Chamada do arquivo JavaScript -->
+<body class="p-6 flex justify-center bg-gray-800">
+<!-- Card do produto -->
+<div id="card-produto" class="bg-gray-700 p-6 rounded shadow text-white">
+    <h2 class="titulo text-2xl font-bold mb-2">Notebook i5</h2>
+    <p class="preco text-gray-300 font-semibold mb-4 text-xl">Preço: R$ 3500</p>
+    <!-- Lista de especificações -->
+    <ul id="lista" class="list-disc pl-5 text-xl mb-4">
+        <li class="item">Processador: i5</li>
+        <li class="item">Memória RAM: 8GB</li>
+        <li class="item">SSD: 256GB</li>
+        <li class="item">Sistema Operacional: Windows</li>
+    </ul>
+    <!-- Novo campo -->
+    <input type="text" id="novaEspecificacao" placeholder="Digite uma nova especificação"
+           class="p-2 rounded border-2 border-gray-500 w-full mb-2">
+    <!-- Botão -->
+    <button id="btnAdicionar" class="bg-gray-800 cursor-pointer mt-3 px-4 py-2 rounded w-full border-2 border-gray-500 hover:bg-gray-500 hover:border-white duration-500">
+        Adicionar
+    </button>
+</div>
 <script src="../js/app.js"></script>
 </body>
 </html>

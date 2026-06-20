@@ -1,0 +1,1 @@
+confirm('Deseja sair do sistema ?');
