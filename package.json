@@ -1,0 +1,25 @@
+{
+  "name": "web-fundamentals-fiap-fase04",
+  "version": "1.0.0",
+  "description": "This repository contains the studies and exercises developed during **Phase 04 of the Systems Analysis and Development program at FIAP**, focused on Front-end development, web page structure, CSS/Tailwind CSS styling, responsive layouts, file organization best practices, and Git/GitHub version control.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ../web-fundamentals-fiap-fase04/cap08/src/input.css -o ../web-fundamentals-fiap-fase04/cap08/dist/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnramoos-hue/web-fundamentals-fiap-fase04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jnramoos-hue/web-fundamentals-fiap-fase04/issues"
+  },
+  "homepage": "https://github.com/jnramoos-hue/web-fundamentals-fiap-fase04#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
+  }
+}

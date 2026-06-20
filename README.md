@@ -166,7 +166,7 @@ In `capt07/package.json`, the main script is:
 ### How to run
 
 ```bash
-cd capt07
+cd cap07
 npm run build
 ```
 
